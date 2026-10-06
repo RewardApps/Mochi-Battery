@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Mochi Battery." />
+  <title>Privacy Policy | Mochi Battery</title>
+  <style>
+    :root{
+      --bg:#fffafc;
+      --card:#ffffff;
+      --ink:#3b2d46;
+      --muted:#75677f;
+      --pink:#f58bd0;
+      --purple:#b86ce8;
+      --lavender:#efe3ff;
+      --blue:#dff3ff;
+      --mint:#ddf7ea;
+      --border:#eadff0;
+      --shadow:0 18px 45px rgba(92,56,110,.10);
+      --radius:24px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 5%, #f3e8ff 0 10%, transparent 11%),
+        radial-gradient(circle at 95% 15%, #e6f7ff 0 12%, transparent 13%),
+        linear-gradient(180deg,#fffafc 0%,#fff 65%,#fbf8ff 100%);
+      line-height:1.7;
+    }
+
+    a{color:#8a48c7;text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{
+      width:min(960px, calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    header{
+      padding:64px 0 28px;
+      text-align:center;
+    }
+
+    .logo{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:18px;
+      font-weight:800;
+      font-size:1.2rem;
+    }
+
+    .battery{
+      width:48px;
+      height:26px;
+      border:3px solid var(--ink);
+      border-radius:8px;
+      position:relative;
+      padding:4px;
+      background:#fff;
+    }
+
+    .battery::after{
+      content:"";
+      position:absolute;
+      right:-7px;
+      top:7px;
+      width:5px;
+      height:10px;
+      background:var(--ink);
+      border-radius:0 3px 3px 0;
+    }
+
+    .battery span{
+      display:block;
+      height:100%;
+      width:75%;
+      border-radius:4px;
+      background:linear-gradient(90deg,var(--pink),var(--purple));
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(2.2rem,6vw,4rem);
+      letter-spacing:-.04em;
+      line-height:1.05;
+    }
+
+    .subtitle{
+      margin:16px auto 0;
+      max-width:680px;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .meta{
+      margin-top:18px;
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .pill{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:8px 14px;
+      font-size:.9rem;
+      color:var(--muted);
+      box-shadow:0 8px 24px rgba(92,56,110,.06);
+    }
+
+    main{
+      padding:22px 0 72px;
+    }
+
+    .toc,
+    .section{
+      background:rgba(255,255,255,.92);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+
+    .toc{
+      padding:24px;
+      margin-bottom:20px;
+    }
+
+    .toc h2{margin-top:0}
+    .toc ul{
+      margin:0;
+      padding-left:20px;
+      columns:2;
+      column-gap:32px;
+    }
+
+    .section{
+      padding:30px;
+      margin:20px 0;
+    }
+
+    .section h2{
+      margin:0 0 12px;
+      font-size:1.45rem;
+      letter-spacing:-.02em;
+    }
+
+    .section h3{
+      margin-top:24px;
+      margin-bottom:8px;
+      font-size:1.05rem;
+    }
+
+    .highlight{
+      background:linear-gradient(135deg,#fff0fa,#f5efff);
+      border:1px solid #ecd7f7;
+    }
+
+    .note{
+      padding:16px 18px;
+      border-radius:16px;
+      background:var(--blue);
+      border:1px solid #cceafb;
+      margin-top:16px;
+      color:#425160;
+    }
+
+    ul{padding-left:22px}
+    li+li{margin-top:6px}
+
+    .data-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      margin-top:16px;
+    }
+
+    .mini{
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      background:#fff;
+    }
+
+    .mini strong{
+      display:block;
+      margin-bottom:6px;
+    }
+
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:.9rem;
+      padding:0 0 42px;
+    }
+
+    @media (max-width:700px){
+      header{padding-top:44px}
+      .toc ul{columns:1}
+      .data-grid{grid-template-columns:1fr}
+      .section{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="battery" aria-hidden="true"><span></span></div>
+        Mochi Battery
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        This Privacy Policy explains how Mochi Battery handles information when you use the app.
+        Mochi Battery is designed to work locally on your device and does not require an account.
+      </p>
+      <div class="meta">
+        <span class="pill">Package: com.mochi.battery</span>
+        <span class="pill">Last updated: October 6, 2026</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="toc">
+        <h2>Quick navigation</h2>
+        <ul>
+          <li><a href="#summary">Privacy summary</a></li>
+          <li><a href="#collect">Information we collect</a></li>
+          <li><a href="#permissions">Permissions</a></li>
+          <li><a href="#storage">Local storage</a></li>
+          <li><a href="#thirdparty">Third-party services</a></li>
+          <li><a href="#children">Children's privacy</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+
+      <section id="summary" class="section highlight">
+        <h2>Privacy summary</h2>
+        <p>
+          Mochi Battery does not require registration and is designed to operate without collecting,
+          transmitting, selling, or sharing your personal information.
+        </p>
+        <div class="data-grid">
+          <div class="mini">
+            <strong>No account required</strong>
+            You can use the app without creating an account or providing your name, email address, or phone number.
+          </div>
+          <div class="mini">
+            <strong>No advertising or analytics SDKs</strong>
+            The release app is not described as using third-party advertising, tracking, analytics, or profiling services.
+          </div>
+          <div class="mini">
+            <strong>No internet permission</strong>
+            The Android release does not request internet, Wi-Fi state, or network state access.
+          </div>
+          <div class="mini">
+            <strong>Settings stay on your device</strong>
+            Battery style, widget, and floating-badge preferences are stored locally so the app can provide its features.
+          </div>
+        </div>
+      </section>
+
+      <section id="collect" class="section">
+        <h2>1. Information we collect</h2>
+        <p>
+          Mochi Battery is designed so that its core functions can be used without sending personal data to us.
+          We do not ask you to provide personal information such as your name, email address, address, contacts,
+          photos, precise location, or payment information.
+        </p>
+        <p>
+          The app may read device information that is necessary to display its battery-related functionality,
+          such as the current battery level or charging status. This information is used locally on your device
+          to render the selected battery style or widget and is not transmitted to us.
+        </p>
+      </section>
+
+      <section id="permissions" class="section">
+        <h2>2. Android permissions and foreground service</h2>
+        <p>
+          Mochi Battery may request Android system permissions only when required for its floating battery badge
+          and related functionality.
+        </p>
+
+        <h3>Display over other apps</h3>
+        <p>
+          If you enable the floating battery feature, Android may ask you to allow Mochi Battery to display
+          over other apps. This permission lets the selected battery badge appear above other apps.
+          You can disable this permission at any time in Android Settings.
+        </p>
+
+        <h3>Foreground service</h3>
+        <p>
+          When the floating badge is active, Android may require a foreground service so the floating element
+          can continue functioning reliably. This service is used only to support the visible floating-battery feature.
+        </p>
+
+        <div class="note">
+          Home-screen widgets do not require the display-over-other-apps permission.
+        </div>
+
+        <h3>Permissions not requested by the Android release</h3>
+        <ul>
+          <li>Internet access</li>
+          <li>Accessibility service access</li>
+          <li>Notification-listener access</li>
+          <li>Contacts</li>
+          <li>Camera or microphone</li>
+          <li>Precise or approximate location</li>
+          <li>Wi-Fi state or network state</li>
+          <li>Wallpaper access</li>
+        </ul>
+      </section>
+
+      <section id="storage" class="section">
+        <h2>3. Local storage and preferences</h2>
+        <p>
+          Mochi Battery may save app preferences locally on your device, including your selected battery design,
+          character, theme, widget preferences, floating-badge settings, and similar customization choices.
+        </p>
+        <p>
+          This information is used to remember your settings and provide the app experience you selected.
+          The Android release disables cloud backup, so the app is not intended to upload these preferences
+          through Android's cloud backup mechanism.
+        </p>
+      </section>
+
+      <section id="thirdparty" class="section">
+        <h2>4. Third-party services, advertising, and tracking</h2>
+        <p>
+          Mochi Battery is not intended to use third-party advertising SDKs, cross-app tracking, analytics SDKs,
+          or services that collect personal information for advertising or profiling.
+        </p>
+        <p>
+          If a future version adds a service that changes how data is handled, this Privacy Policy and the
+          applicable store privacy disclosures will be updated before or when that change becomes effective.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>5. Data sharing and sale</h2>
+        <p>
+          We do not sell personal information. Because the current release is designed not to collect personal
+          information from users, we also do not share personal information with advertisers, data brokers,
+          or analytics providers.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>6. Data retention and deletion</h2>
+        <p>
+          Since Mochi Battery does not maintain a user account or server-side user profile, there is generally no
+          personal account data for us to retain or delete.
+        </p>
+        <p>
+          Locally stored app preferences can be removed by clearing the app's storage/data in your device settings
+          or by uninstalling the app.
+        </p>
+      </section>
+
+      <section id="children" class="section">
+        <h2>7. Children's privacy</h2>
+        <p>
+          Mochi Battery does not knowingly collect personal information from children. The app's cute characters
+          and visual design do not change the fact that the app is designed to function without requiring users
+          to submit personal information.
+        </p>
+        <p>
+          Parents or guardians who believe that information has been provided to us in error may contact us using
+          the method described below.
+        </p>
+      </section>
+
+      <section id="security" class="section">
+        <h2>8. Security</h2>
+        <p>
+          We use a privacy-minimizing design by keeping app preferences and battery-display functionality local
+          to the device whenever possible. No method of electronic storage is completely risk-free, but reducing
+          unnecessary data collection also reduces the amount of user information exposed to such risks.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. iOS version</h2>
+        <p>
+          The iOS version may provide a different feature set because iOS does not support Android-style floating
+          overlays above other apps. If iOS-specific features or permissions are introduced, the app and this
+          Privacy Policy will be updated as necessary.
+        </p>
+      </section>
+
+      <section id="changes" class="section">
+        <h2>10. Changes to this Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy when the app changes, legal requirements change, or new features are added.
+          Any revised version will be posted on this page with an updated effective date.
+        </p>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>11. Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or Mochi Battery's privacy practices,
+          please contact us using the developer support contact listed on Mochi Battery's Google Play Store
+          or Apple App Store listing.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Mochi Battery. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
